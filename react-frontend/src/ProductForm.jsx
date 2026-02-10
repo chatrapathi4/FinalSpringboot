@@ -16,7 +16,7 @@ function ProductForm() {
 
   const fetchCustomers = async () => {
     try {
-      const response = await axios.get("http://localhost:8080/api/customers");
+      const response = await axios.get("https://finalspringboot.onrender.com/api/customers");
       setCustomers(response.data);
     } catch (error) {
       console.error("Failed to fetch customers:", error);
@@ -55,7 +55,7 @@ function ProductForm() {
 
     setLoading(true);
     try {
-      await axios.post("http://localhost:8080/api/products", {
+      await axios.post("https://finalspringboot.onrender.com/api/products", {
         productName: productName.trim(),
         price: parseFloat(price),
         customer: { id: parseInt(customerId) }

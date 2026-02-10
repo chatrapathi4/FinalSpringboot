@@ -12,7 +12,7 @@ function ProductList() {
   const fetchProducts = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("http://localhost:8080/api/products");
+      const response = await axios.get("https://finalspringboot.onrender.com/api/products");
       setProducts(response.data);
     } catch (error) {
       console.error("Failed to fetch products:", error);

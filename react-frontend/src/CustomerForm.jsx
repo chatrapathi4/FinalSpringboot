@@ -36,7 +36,7 @@ function CustomerForm() {
 
     setLoading(true);
     try {
-      await axios.post("http://localhost:8080/api/customers", {
+      await axios.post("https://finalspringboot.onrender.com/api/customers", {
         name: name.trim(),
         email: email.trim()
       });
