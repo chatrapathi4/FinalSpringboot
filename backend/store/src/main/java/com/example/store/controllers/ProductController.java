@@ -9,7 +9,7 @@ import com.example.store.service.ProductService;
 
 @RestController
 @RequestMapping("/api/products")
-@CrossOrigin("http://localhost:3000")
+@CrossOrigin(origins = "*")
 public class ProductController {
     private final ProductService service;
     

@@ -6,7 +6,7 @@ import com.example.store.service.CustomerService;
 
 @RestController
 @RequestMapping("/api/customers")
-@CrossOrigin(origins = {"http://localhost:3000", "https://*.onrender.com"})
+@CrossOrigin(origins = "*")
 public class CustomerController {
     private final CustomerService service;
     
