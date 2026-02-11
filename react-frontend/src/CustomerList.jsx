@@ -12,7 +12,7 @@ function CustomerList() {
   const fetchCustomers = async () => {
     setLoading(true);
     try {
-      const response = await axios.get("http://localhost:8080/api/customers");
+      const response = await axios.get("https://finalspringboot.onrender.com/api/customers");
       setCustomers(response.data);
     } catch (error) {
       console.error("Failed to fetch customers:", error);
